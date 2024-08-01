@@ -103,6 +103,8 @@ for dd, DIR in enumerate(listDIRS):
         run_name = subjID + '_task-' + task_id + '_tracksys-IMU' + deviceID + '_run-0' + str(run_num)
         
         df = pd.read_csv(file_path, header=header)
+        # convert SampleTimeFine from ms to s
+        df['SampleTimeFine'] = df['SampleTimeFine']/1e6
     
         # BREAK DOWN CHANNEL INFO FOR _channels.tsv
         channels = df.columns
