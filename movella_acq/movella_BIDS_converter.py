@@ -20,8 +20,8 @@ import os
 import csv
 import json 
 
-movella_path = '/Users/lauracarlton/Documents/DATA/movella/'
-bids_path = '/Users/lauracarlton/Documents/DATA/MAFC_raw/'
+movella_path = '/projectnb/nphfnirs/ns/lcarlton/DATA/movella_RAW/'
+bids_path = '/projectnb/nphfnirs/ns/lcarlton/DATA/MAFC_raw/'
 
 date = '20240729'
 
@@ -30,7 +30,7 @@ tasks = [['RS', 1],
          ['MA', 1],
          ['MAaudio', 1]]
 
-subjID = 'sub-09'
+subjID = 'sub-10'
 
 tracked_point_mapping = {'1': 'torso',
                 '2': 'right_head',
